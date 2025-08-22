@@ -1,0 +1,42 @@
+/* 1 forma de utilizar */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* 2 forma de utilizar */
+@font-face{
+    font-family: Inter;
+    src: url(../assets/fonts/Inter-VariableFont_opsz\,wght.ttf);
+      
+}
+ /* variaveis */
+:root{
+   --cor-preto: #000000;
+   --cor-marrom: #B6B6B6;
+   --cor-bege: #FAFAFA;
+   --cor-marrom-terra: #e48c5a;
+   --cor-bege-claro: #DAB49D;
+
+   --borda: 1px solid var(--cor-marrom-terra);
+   --borda-arredondada: 2px;
+
+   --tamanho-fonte-lg: 20px;
+   --tamanho-fonte-lg: 16px;
+   --tamanho-fonte-lg: 14px;
+}
+
+/* SELETOR GLOBAL*/
+*{
+      padding: 0%; /* espaço interno*/
+      margin: 0;   /* espaço externo*/
+      box-sizing: border-box; 
+      font-family: "inter" serif;
+}
+body{
+    background-color: var(--cor-bege);
+
+}
+
+h1{
+    position: absolute; /* altera a posição do elemento*/
+    z-index: -1; /* camadas do elemento*/
+    opacity: 0; /* opacidade */
+}
