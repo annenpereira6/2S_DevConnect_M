@@ -1,7 +1,5 @@
 main {
-    background-color: aqua;
-    min-height: 100vh;
-    /*minímo de altura da janela no dispositivo*/
+    min-height: 100vh;  /*minímo de altura da janela no dispositivo*/
     width: 100%;
     display: flex;
     justify-content: center;
@@ -10,39 +8,74 @@ main {
 }
 
 main>div {
-    background-color: blueviolet;
-    width: 100%;
-    max-width: 342px;
-    /* height: 400px;*/
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*  justify-content: space-between;*/
-    gap: 25px;
+    gap: 15px;
 
 
 }
 
 form {
-    /* background-color: azure;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center ; /*alinha na direção do flex*/
+    align-items: center;
+    gap: 15px;
+    padding: 3%;
 }
 
-#secao-cadastro {
-    /* background-color: beige;*/
-}
 
-.estilo-formulario {
-    background-color: var(--cor-bege-claro);
-    border: var(--borda);
+
+.formulario-botao-marrom-terra{
     width: 100%;
 }
 
+form > p{
+    text-transform: uppercase;
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor-preto);
+
+}
+
+form > a, #secao-cadastro > p > a {
+
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-sm);
+    text-decoration: none; /*remove a decoracao*/
+}
+ 
+    
+#secao-cadastro > p{
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-md);
+}
+
+
+
+
+.estilo-formulario {
+    width: 100%;
+    max-width: 342px;
+    background-color: var(--cor-branco);
+    border: var(--borda);
+}
+
+#secao-cadastro{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 main>div>p {
-    background-color: blanchedalmond;
+    color: var(--cor-preto);
+    font-size: var(--tamanho-fonte-sm);
 }
 
 #secao-instalacao {
-    background-color: aquamarine;
+
     display: flex;
     align-items: center;
     flex-wrap: wrap;

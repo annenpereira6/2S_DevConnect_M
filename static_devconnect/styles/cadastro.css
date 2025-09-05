@@ -1,0 +1,128 @@
+
+main {
+    background-color: var(--cor-bege-claro);
+    min-height: 100vh;
+    /*minimo de altura da janela do dispositivo*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main>div {
+
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /*justify-content: space-between;*/
+    gap: 15px;
+    border: 1px solid var(--cor-preto);
+}
+
+
+form {
+    background-color: var(--cor--marrom-terra);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 3%;
+}
+
+.formulario-cadastro {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.formulario-botao-cadastro {
+    width: 100%;
+    border: var(--borda);
+    height: 35px;
+    background-color: var(--cor--bege);
+    border-radius: var(--borda-arredondada);
+    border-radius: var(--borda-arredondada);
+}
+
+form>p {
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor--cinza-claro);
+}
+
+#parte-cadastro>p>a {
+    color: var(--cor--preto);
+    font-size: var(--tamanho-fonte-md);
+    text-decoration: none;
+}
+
+#parte-cadastro>p {
+    color: var(--cor-preto);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Estilo-Cadastro {
+    width: 100%;
+    max-width: 342px;
+    background-color: var(--cor--bege);
+    border: var(--borda);
+}
+
+main>div>p {
+    color: var(--cor--marrom);
+    font-size: var(--tamanho-fonte-sm);
+}
+
+.formulario-cadastro>input {
+    border: var(--borda);
+    height: 35px;
+    background-color: var(--cor-cinza-claro);
+    font-size: var(--tamanho-fonte-sm);
+    color: var(--cor--preto);
+    border-radius: var(--borda-arredondada);
+}
+
+
+#campo-upload {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    width: 300px;
+    
+}
+#texto-upload{
+    border: 2px solid black;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#secao-cadastro2{
+    border: 2px solid black;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulario-botao-cadastrar-se{
+    width: 100%;
+    height: 35px;
+    background-color: transparent;
+    border: var(--borda);
+}
+
+.estilo-formulario {
+    background-color: var(--cor-marrom-terra);
+}
+
+
