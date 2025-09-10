@@ -50,30 +50,65 @@ font-size: var(--tamanho-fonte-lg);
     text-decoration: none;
 }
 
-
-.card-perfil>button {
-    background-color: transparent;
-    border: none;
-    font-size: var(--tamanho-fonte-sm);
-    color: var(--cor-preto);
+.posts{
+    margin: 30px 50px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    gap: 5px;
+}
+
+#cabecalho-do-posts{
+ display: flex;
+ justify-content: center;
+ gap: 10px;
+margin-bottom: 10px;
+}
+
+.post{
+border: var(--borda);
+padding: 15px;
+margin-bottom: 20px;
+width: 750px;
 }
 
 
+.post-cabecalho{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
 
-.texto-perfil{
-    text-decoration: none;
-    font-size: var(--tamanho-fonte-md);
+.post>p{
+    margin: 15px 0;
     color: var(--cor-preto);
 }
 
- .texto-perfil2>nav{
-    text-decoration: none;
-    font-size: var(--tamanho-fonte-md);
-    color: var(--cor-preto);
- }
+.post-rodape{
+    display: flex;
+    width: 100px;
+    flex-wrap: wrap;
+    gap: 10px;
+    order: 1;
+    margin-left: 15px;
+    margin-top: 15px;
+}
 
+.post-rodape>button{
+    background-color:transparent ;
+    border: none;
+    cursor: pointer;
 
+}
+
+#botao-comentario{
+    background-color:transparent ;
+    border: none;
+
+    color: var(--cor-bege);
+    font-size: var(--tamanho-fonte-sm);
+    order: 2;
+
+    margin-left: 15px;
+
+}
