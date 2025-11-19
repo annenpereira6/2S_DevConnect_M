@@ -170,7 +170,31 @@ h1 {
 
 
 /* RESPONSIVO */
-@media only screen and (max-width: 500px) {
+@media (max-width: 900px) {
+    #cabecalho > nav {
+        width: 90%;
+    }
+
+    .foto-perfil {
+        width: 35px;
+        height: 35px;
+    }
+}
+
+/* Telas menores que 700px */
+@media (max-width: 700px) {
+    .cabecalho-acoes {
+        gap: 10px;
+    }
+
+    .formulario-campos > input {
+        height: 34px;
+        font-size: 13px;
+    }
+}
+
+/* Telas menores que 500px */
+@media (max-width: 500px) {
     #logo-mobile {
         display: initial;
     }
@@ -178,12 +202,40 @@ h1 {
     #logo-desktop {
         display: none;
     }
+
+    #cabecalho {
+        height: 70px;
+    }
+
+    .foto-perfil {
+        width: 32px;
+        height: 32px;
+    }
+
+    .formulario-botao-marrom-terra {
+        height: 38px;
+        font-size: 13px;
+    }
+
+    #texto-upload {
+        height: 38px;
+        font-size: 13px;
+    }
 }
 
-.foto-perfil {
-    width: 40px;
-    height: 40px;
-    object-fit: cover;
-    object-position: center;
-    border-radius: 50%;
+/* Telas menores que 400px */
+@media (max-width: 400px) {
+    #cabecalho > nav {
+        flex-direction: row;
+        gap: 10px;
+    }
+
+    .cabecalho-acoes {
+        gap: 8px;
+    }
+
+    .foto-perfil {
+        width: 28px;
+        height: 28px;
+    }
 }

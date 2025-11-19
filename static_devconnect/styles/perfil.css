@@ -1,11 +1,11 @@
-/* Estilos principais */
-
 main {
     width: 100%;
     min-height: 100vh;
     display: block;
+    padding: 10px;
 }
 
+/* --- PERFIL --- */
 #perfil {
     width: 100%;
     display: flex;
@@ -13,12 +13,14 @@ main {
     gap: 20px;
     padding: 30px 50px;
     border-bottom: var(--borda);
+    flex-wrap: wrap;
 }
 
 #perfil > div {
-    margin-left: 250px;
     display: flex;
     align-items: center;
+    gap: 20px;
+    margin-left: 250px;
 }
 
 .informacoes-perfil {
@@ -49,8 +51,9 @@ main {
     text-decoration: none;
 }
 
+/* --- POSTS --- */
 .posts {
-    margin: 30px 50px;
+    /* margin: 30px 50px; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -68,7 +71,8 @@ main {
     border: var(--borda);
     padding: 15px;
     margin-bottom: 20px;
-    width: 750px;
+    max-width: 750px;
+    width: 100%;
 }
 
 .post-cabecalho {
@@ -84,12 +88,11 @@ main {
 
 .post-rodape {
     display: flex;
-    width: 100px;
     flex-wrap: wrap;
     gap: 10px;
-    order: 1;
     margin-left: 15px;
     margin-top: 15px;
+    width: auto;
 }
 
 .post-rodape > button {
@@ -103,11 +106,14 @@ main {
     border: none;
     color: var(--cor-bege);
     font-size: var(--tamanho-fonte-sm);
-    order: 2;
     margin-left: 15px;
 }
 
+/* ---------------------------- */
 /* RESPONSIVIDADE */
+/* ---------------------------- */
+
+/* Telas até 768px (tablets e celulares grandes) */
 @media (max-width: 768px) {
 
     #perfil {
@@ -117,9 +123,9 @@ main {
     }
 
     #perfil > div {
+        margin-left: 0;
         flex-direction: column;
         align-items: center;
-        margin-left: 0;
     }
 
     .informacoes-perfil {
@@ -127,48 +133,85 @@ main {
         text-align: center;
     }
 
-    .informacoes-perfil > h2 {
-        font-size: 1.2rem;
-    }
-
     #publicacao-informacoes > a {
         display: block;
         margin: 5px 0;
+        text-align: center;
     }
 
     .posts {
-        margin: 20px 10px;
+        /* margin: 20px 10px; */
         width: 100%;
     }
 
     .post {
         width: 100%;
-        box-sizing: border-box;
     }
 
     .post-rodape {
         width: 100%;
         margin-left: 0;
+        justify-content: center;
     }
 
     #botao-comentario {
         margin-left: 0;
     }
+}
 
-    nav {
-        flex-direction: column;
-        align-items: center;
+/* Telas até 500px (celulares médios) */
+@media (max-width: 500px) {
+
+    #perfil {
+        padding: 15px;
     }
 
-
-    .cabecalho-acoes {
-        margin-top: 10px;
-        display: flex;
+    #perfil > div {
         gap: 10px;
+    }
+
+    .informacoes-perfil > h2 {
+        font-size: 1.3rem;
+    }
+
+    .informacoes-perfil {
+        font-size: 0.9rem;
+    }
+
+    .post {
+        padding: 12px;
+    }
+
+    .post > p {
+        font-size: 0.95rem;
     }
 }
 
-/* GERAL - para garantir comportamento consistente */
+/* Telas até 400px (celulares pequenos) */
+@media (max-width: 400px) {
+
+    .informacoes-perfil > h2 {
+        font-size: 1.1rem;
+    }
+
+    #publicacao-informacoes > a {
+        font-size: 0.9rem;
+    }
+
+    /* .post {
+        padding: 10px;
+    } */
+
+    .post-cabecalho {
+        gap: 6px;
+    }
+
+    .post > p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Reset Geral */
 * {
     box-sizing: border-box;
 }
